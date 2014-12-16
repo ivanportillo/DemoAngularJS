@@ -80,13 +80,12 @@
                   <p><div ng-show="producto.disponibilidad" style="color:green;">En stock</div> <div ng-hide="producto.disponibilidad" style="color:red;">Agotado</div></p>
                 </div>
                 <div class="ratings">
-                  <p class="pull-right">Valoraciones (0)</p>
                   <p>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star"></span>
-                    <span class="glyphicon glyphicon-star-empty"></span>
-                    <span class="glyphicon glyphicon-star-empty"></span>
+                    <span ng-show="producto.valoracion >= 1" class="glyphicon glyphicon-star"></span><span ng-hide="producto.valoracion >= 1" class="glyphicon glyphicon-star-empty"></span>
+                    <span ng-show="producto.valoracion >= 2" class="glyphicon glyphicon-star"></span><span ng-hide="producto.valoracion >= 2" class="glyphicon glyphicon-star-empty"></span>
+                    <span ng-show="producto.valoracion >= 3" class="glyphicon glyphicon-star"></span><span ng-hide="producto.valoracion >= 3" class="glyphicon glyphicon-star-empty"></span>
+                    <span ng-show="producto.valoracion >= 4" class="glyphicon glyphicon-star"></span><span ng-hide="producto.valoracion >= 4" class="glyphicon glyphicon-star-empty"></span>
+                    <span ng-show="producto.valoracion >= 5" class="glyphicon glyphicon-star"></span><span ng-hide="producto.valoracion >= 5" class="glyphicon glyphicon-star-empty"></span>
                   </p>
                 </div>
               </div>
